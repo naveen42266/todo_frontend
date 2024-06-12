@@ -40,7 +40,9 @@ export default function App() {
 	const taskSummary = useRef('');
 
 
-	let API_URL = "http://localhost:8080/"
+	let API_URL ="http://localhost:8080/"
+	// "https://todo-backend-neon-zeta.vercel.app/"
+	// "http://localhost:8080/"
 
 	async function apiCall() {
 		fetch(API_URL + "api/todoapp/GetNotes").then(response => response.json())
